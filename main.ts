@@ -69,13 +69,6 @@ function Levels () {
         Bportal = sprites.create(assets.image`BPortal`, SpriteKind.Portal)
         scene.place(value, Bportal)
     }
-    for (let value of scene.getTilesByType(15)) {
-        if (CurrentLervel == 5) {
-            Fork = sprites.create(assets.image`FORK`, SpriteKind.BOSS)
-            scene.place(value, Fork)
-            Fork.follow(mySprite, 40)
-        }
-    }
     for (let value of scene.getTilesByType(10)) {
         SPOON = sprites.create(assets.image`Spoo`, SpriteKind.Spoon)
         scene.place(value, SPOON)
@@ -130,7 +123,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Portal, function (sprite, otherSprite) {
     scene.placeOnRandomTile(mySprite, 1)
     if (CurrentLervel == 5) {
-    	
+        for (let value of scene.getTilesByType(15)) {
+            if (CurrentLervel == 5) {
+                Fork = sprites.create(assets.image`FORK`, SpriteKind.BOSS)
+                scene.place(value, Fork)
+                Fork.follow(mySprite, 40)
+            }
+        }
     }
 })
 function Tiles () {
@@ -336,9 +335,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 let Final_fork: Sprite = null
 let Fork2: Sprite = null
+let Fork: Sprite = null
 let projectile: Sprite = null
 let SPOON: Sprite = null
-let Fork: Sprite = null
 let Bportal: Sprite = null
 let MyEnemy: Sprite = null
 let Cleaver: Sprite = null
