@@ -43,7 +43,7 @@ function Levels () {
     } else if (CurrentLervel == 8) {
         scene.setTileMap(assets.image`2-3`, TileScale.Sixteen)
     } else if (CurrentLervel == 9) {
-    	
+        scene.setTileMap(assets.image`2-4`, TileScale.Sixteen)
     } else {
         game.over(true)
     }
