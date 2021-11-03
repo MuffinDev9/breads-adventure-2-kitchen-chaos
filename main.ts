@@ -7,6 +7,7 @@ namespace SpriteKind {
     export const LASTSTAGE = SpriteKind.create()
     export const Spoon = SpriteKind.create()
     export const HurtBySpikes = SpriteKind.create()
+    export const HurtBySpikes2 = SpriteKind.create()
 }
 // Creates Levels.
 function Levels () {
@@ -282,6 +283,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Spoon, function (sprite, otherSp
         info.changeLifeBy(-1)
     }
 })
+sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, otherSprite) {
+    sprite.destroy(effects.fire, 1000)
+    for (let value of scene.getTilesByType(15)) {
+        Whisk2 = sprites.create(assets.image`Rusty2`, SpriteKind.HurtBySpikes2)
+    }
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.End, function (sprite, otherSprite) {
     Levels()
 })
@@ -339,6 +346,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         info.changeLifeBy(-1)
     }
 })
+let Whisk2: Sprite = null
 let Final_fork: Sprite = null
 let Whisk: Sprite = null
 let Fork2: Sprite = null
