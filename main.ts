@@ -366,6 +366,10 @@ sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, o
         Whisk2.follow(mySprite, 90)
     }
 })
+sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Player, function (sprite, otherSprite) {
+    info.changeLifeBy(-1)
+    scene.placeOnRandomTile(mySprite, 5)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.End, function (sprite, otherSprite) {
     Levels()
 })
@@ -435,6 +439,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Spike, function (sprite, otherSp
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprite.destroy()
     otherSprite.destroy(effects.fire, 500)
+})
+sprites.onOverlap(SpriteKind.HurtBySpikes2, SpriteKind.Player, function (sprite, otherSprite) {
+    info.changeLifeBy(-1)
+    scene.placeOnRandomTile(mySprite, 5)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy(effects.fire, 200)
