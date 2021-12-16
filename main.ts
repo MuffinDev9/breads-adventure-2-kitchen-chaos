@@ -8,6 +8,7 @@ namespace SpriteKind {
     export const Spoon = SpriteKind.create()
     export const HurtBySpikes = SpriteKind.create()
     export const HurtBySpikes2 = SpriteKind.create()
+    export const HurtBySpikes3 = SpriteKind.create()
 }
 // Creates Levels.
 function Levels () {
@@ -371,6 +372,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.End, function (sprite, otherSpri
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Spoon, function (sprite, otherSprite) {
     sprite.destroy()
 })
+sprites.onOverlap(SpriteKind.HurtBySpikes2, SpriteKind.Spike, function (sprite, otherSprite) {
+    sprite.destroy(effects.fire, 1000)
+    for (let value14 of scene.getTilesByType(15)) {
+        Whisk3 = sprites.create(assets.image`Rusty3`, SpriteKind.HurtBySpikes3)
+        scene.place(value14, Whisk3)
+        Whisk3.follow(mySprite, 110)
+    }
+})
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.vy == 0) {
         mySprite.setImage(assets.image`Aaron`)
@@ -422,6 +431,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         info.changeLifeBy(-1)
     }
 })
+let Whisk3: Sprite = null
 let Whisk2: Sprite = null
 let Final_fork: Sprite = null
 let Whisk: Sprite = null
