@@ -136,6 +136,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Portal, function (sprite, otherS
         for (let value12 of scene.getTilesByType(15)) {
             Whisk = sprites.create(assets.image`Rusty`, SpriteKind.HurtBySpikes)
             scene.place(value12, Whisk)
+            Whisk.follow(mySprite, 70)
         }
     }
 })
@@ -355,6 +356,8 @@ sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, o
     sprite.destroy(effects.fire, 1000)
     for (let value14 of scene.getTilesByType(15)) {
         Whisk2 = sprites.create(assets.image`Rusty2`, SpriteKind.HurtBySpikes2)
+        scene.place(value14, Whisk2)
+        Whisk2.follow(mySprite, 90)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.End, function (sprite, otherSprite) {
