@@ -386,6 +386,11 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         LR = 2
     }
 })
+sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Spike, function (sprite, otherSprite) {
+    sprite.destroy(effects.fire, 1000)
+    scene.setTileAt(scene.getTile(27, 9), 9)
+    Bossexists = false
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.SECONDSTAGE, function (sprite, otherSprite) {
     if (sprite.y < otherSprite.y) {
         sprite.vy = -100
