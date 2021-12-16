@@ -390,6 +390,15 @@ sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Spike, function (sprite, 
     sprite.destroy(effects.fire, 1000)
     scene.setTileAt(scene.getTile(27, 9), 9)
     Bossexists = false
+    music.playMelody("A G A B - - - - ", 416)
+    for (let value13 of scene.getTilesByType(9)) {
+        Goal = sprites.create(assets.image`GOOOL`, SpriteKind.End)
+        scene.place(value13, Goal)
+    }
+})
+sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Player, function (sprite, otherSprite) {
+    info.changeLifeBy(-1)
+    scene.placeOnRandomTile(mySprite, 5)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.SECONDSTAGE, function (sprite, otherSprite) {
     if (sprite.y < otherSprite.y) {
