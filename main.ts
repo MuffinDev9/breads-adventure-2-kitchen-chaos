@@ -14,14 +14,14 @@ function Levels () {
     for (let value of sprites.allOfKind(SpriteKind.Portal)) {
         value.destroy()
     }
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        value.destroy()
+    for (let value2 of sprites.allOfKind(SpriteKind.Enemy)) {
+        value2.destroy()
     }
-    for (let value of sprites.allOfKind(SpriteKind.End)) {
-        value.destroy()
+    for (let value3 of sprites.allOfKind(SpriteKind.End)) {
+        value3.destroy()
     }
-    for (let value of sprites.allOfKind(SpriteKind.Spike)) {
-        value.destroy()
+    for (let value4 of sprites.allOfKind(SpriteKind.Spike)) {
+        value4.destroy()
     }
     CurrentLervel += 1
     Deaths = 0
@@ -50,11 +50,11 @@ function Levels () {
         game.over(true)
     }
     scene.placeOnRandomTile(mySprite, 5)
-    for (let value of scene.getTilesByType(9)) {
+    for (let value5 of scene.getTilesByType(9)) {
         Goal = sprites.create(assets.image`GOOOL`, SpriteKind.End)
-        scene.place(value, Goal)
+        scene.place(value5, Goal)
     }
-    for (let value of scene.getTilesByType(2)) {
+    for (let value6 of scene.getTilesByType(2)) {
         Cleaver = sprites.create(assets.image`KLEEVEE`, SpriteKind.Spike)
         animation.runImageAnimation(
         Cleaver,
@@ -62,20 +62,20 @@ function Levels () {
         150,
         true
         )
-        scene.place(value, Cleaver)
+        scene.place(value6, Cleaver)
     }
-    for (let value of scene.getTilesByType(6)) {
+    for (let value7 of scene.getTilesByType(6)) {
         MyEnemy = sprites.create(assets.image`Toaster`, SpriteKind.Enemy)
-        scene.place(value, MyEnemy)
+        scene.place(value7, MyEnemy)
         MyEnemy.follow(mySprite, 30)
     }
-    for (let value of scene.getTilesByType(8)) {
+    for (let value8 of scene.getTilesByType(8)) {
         Bportal = sprites.create(assets.image`BPortal`, SpriteKind.Portal)
-        scene.place(value, Bportal)
+        scene.place(value8, Bportal)
     }
-    for (let value of scene.getTilesByType(10)) {
+    for (let value9 of scene.getTilesByType(10)) {
         SPOON = sprites.create(assets.image`Spoo`, SpriteKind.Spoon)
-        scene.place(value, SPOON)
+        scene.place(value9, SPOON)
         SPOON.follow(mySprite, 50)
     }
 }
@@ -95,9 +95,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.BOSS, function (sprite, otherSpr
         sprite.vy = -100
         Fork.destroy()
         music.playMelody("A G A B - - - - ", 416)
-        for (let value of scene.getTilesByType(15)) {
+        for (let value10 of scene.getTilesByType(15)) {
             Fork2 = sprites.create(assets.image`FORK2`, SpriteKind.SECONDSTAGE)
-            scene.place(value, Fork2)
+            scene.place(value10, Fork2)
             Fork2.follow(mySprite, 50)
         }
     } else {
@@ -127,15 +127,15 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Portal, function (sprite, otherSprite) {
     scene.placeOnRandomTile(mySprite, 1)
     if (CurrentLervel == 5) {
-        for (let value of scene.getTilesByType(15)) {
+        for (let value11 of scene.getTilesByType(15)) {
             Fork = sprites.create(assets.image`FORK`, SpriteKind.BOSS)
-            scene.place(value, Fork)
+            scene.place(value11, Fork)
             Fork.follow(mySprite, 40)
         }
     } else if (CurrentLervel == 9) {
-        for (let value of scene.getTilesByType(15)) {
+        for (let value12 of scene.getTilesByType(15)) {
             Whisk = sprites.create(assets.image`Rusty`, SpriteKind.HurtBySpikes)
-            scene.place(value, Whisk)
+            scene.place(value12, Whisk)
         }
     }
 })
@@ -158,7 +158,24 @@ function Tiles () {
         1 d d d d d d d d d d d d d d b 
         b b b b b b b b b b b b b b b b 
         `, true)
-    scene.setTile(5, assets.image`lite`, false)
+    scene.setTile(5, img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, false)
     scene.setTile(14, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -177,8 +194,42 @@ function Tiles () {
         . . . . . . . e e . . . . . . . 
         . . . . . . . e e . . . . . . . 
         `, false)
-    scene.setTile(2, assets.image`nuffink`, false)
-    scene.setTile(6, assets.image`nuffink`, false)
+    scene.setTile(2, img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, false)
+    scene.setTile(6, img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, false)
     scene.setTile(15, img`
         f f f f f f f f f f f f f f f f 
         f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
@@ -197,7 +248,24 @@ function Tiles () {
         f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
         f f f f f f f f f f f f f f f f 
         `, true)
-    scene.setTile(1, assets.image`oportal`, false)
+    scene.setTile(1, img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, false)
     scene.setTile(8, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -265,9 +333,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.LASTSTAGE, function (sprite, oth
         Final_fork.destroy(effects.fire, 500)
         music.playMelody("A G A B - - - - ", 416)
         scene.setTileAt(scene.getTile(18, 5), 9)
-        for (let value of scene.getTilesByType(9)) {
+        for (let value13 of scene.getTilesByType(9)) {
             Goal = sprites.create(assets.image`GOOOL`, SpriteKind.End)
-            scene.place(value, Goal)
+            scene.place(value13, Goal)
         }
     } else {
         scene.placeOnRandomTile(mySprite, 1)
@@ -285,7 +353,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Spoon, function (sprite, otherSp
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, otherSprite) {
     sprite.destroy(effects.fire, 1000)
-    for (let value of scene.getTilesByType(15)) {
+    for (let value14 of scene.getTilesByType(15)) {
         Whisk2 = sprites.create(assets.image`Rusty2`, SpriteKind.HurtBySpikes2)
     }
 })
@@ -306,9 +374,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.SECONDSTAGE, function (sprite, o
         sprite.vy = -100
         Fork2.destroy()
         music.playMelody("A G A B - - - - ", 416)
-        for (let value of scene.getTilesByType(15)) {
+        for (let value15 of scene.getTilesByType(15)) {
             Final_fork = sprites.create(assets.image`FORK3`, SpriteKind.LASTSTAGE)
-            scene.place(value, Final_fork)
+            scene.place(value15, Final_fork)
             Final_fork.follow(mySprite, 60)
         }
     } else {
@@ -359,6 +427,7 @@ let Cleaver: Sprite = null
 let Goal: Sprite = null
 let Deaths = 0
 let LR = 0
+let vy = 0
 let mySprite: Sprite = null
 let CANDOJAM = false
 let CurrentLervel = 0
@@ -375,7 +444,6 @@ CANDOJAM = false
 mySprite = sprites.create(assets.image`Aaron`, SpriteKind.Player)
 mySprite.ay = 500
 let vx = 100
-let vy = 0
 controller.moveSprite(mySprite, vx, vy)
 LR = 2
 scene.cameraFollowSprite(mySprite)

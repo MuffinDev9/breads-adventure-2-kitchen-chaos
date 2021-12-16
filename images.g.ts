@@ -79,40 +79,6 @@ namespace myImages {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "Cr2Y#MOa)wl_PB#X+PIK":
-            case "Tutorial":return img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . 9 
-. . . . . . . . . d 
-. . . . . . . . d d 
-5 . . . . e . d d d 
-d d d d d d d d d d 
-`;
-            case "TdD3YqE/~KsDew0u[Kbl":
-            case "1-1":return img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . d 2 . . . . 9 
-. . . . . . . . d d 
-d . . . . . . d d d 
-d d . . . . d d d d 
-d d . . . . . . . 2 
-d d d . . . . . . . 
-d d d d d d d . . . 
-d d d d d d 2 . . . 
-d d d d d d 2 . . . 
-d d d d d d 2 . . . 
-d d d d d d 2 . . . 
-d d d d d d 2 . . . 
-d d d d d d d . . e 
-. . . . . . . . . d 
-. . . . . . . . d d 
-5 . . . . . . d d d 
-d d d d d d d d d d 
-`;
             case "N~OK3e#WKwhSp04(nFQR":
             case "nuffink":return img`
 . . . . . . . . . . . . . . . . 
@@ -132,33 +98,6 @@ d d d d d d d d d d
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "#2GD(W%:+o@5d":
-            case "1-2":return img`
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddd222222222222dddddddddd
-dddddddd22222222222..........22222222222
-dddddddd2...............................
-dddddddd2...........................6...
-dddddddd2..........2....................
-..............6......6.....6............
-.............................2..........
-.......................................9
-.....ddd.............................ddd
-.....ddd........ddd...2........ddd..dddd
-.....ddd........ddd..........ddddddddddd
-.....ddd........ddd.........dddddddddddd
-.....ddd........ddd.......dddddddddddddd
-.....dddddd22222ddddd....ddddddddddddddd
-5....ddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-`;
             case "ST]Ee5SgLIp%XS+594":
             case "lite":return img`
 . . . . . . . . . . . . . . . . 
@@ -177,19 +116,6 @@ dddddddddddddddddddddddddddddddddddddddd
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`;
-            case "zmk=}[S6g!D6g+M^;g*(":
-            case "1-3":return img`
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. 5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . 6 . . . . . . 6 . . . . . . . . . . . . . 9 . . 
-. d . . . . . . . d . . . . . . . . . . . . . . . . d d d . 
-. d 2 . . . . . . . . . . . . . . . . . . . . . . d d d d d 
-d d d d d . . . . . 2 . . . . . 2 d d d d d d d d d d d d d 
-d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
-d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 `;
             case "{p,BK`urQJ7HM":
             case "Toaster":return img`
@@ -247,39 +173,6 @@ d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d
 . . 8 8 9 9 9 8 8 9 9 9 8 8 . . 
 . . . 8 8 8 9 9 9 9 8 8 8 . . . 
 . . . . . 8 8 8 8 8 8 . . . . . 
-`;
-            case "t}Rm15B~{b=X0T*Y1exW":
-            case "1-4":return img`
-dddddddddddddddddddd
-d.................fd
-d..2.....22.....2..d
-d..................d
-d..................d
-d1.................d
-dddddddddddddddddddd
-...............62222
-....................
-8...................
-ddddddddddddddd.....
-ddddddddddddd.2.....
-dddddddddd..2.......
-dddddd..............
-ddd2.............ddd
-6............ddddddd
-.........ddddddddddd
-.....ddddddddddddddd
-..ddddddddddddddddd6
-...ddddd2..2...2dd..
-.................d..
-....................
-...........dddd.....
-....ddddddddddddd...
-ddddddddddddd2ddd...
-ddddddd..6.........d
-..................dd
-.................ddd
-5...............dddd
-dddddddddddddddddddd
 `;
             case "f*k?dAI{nZv,r*1+gQ2[":
             case "FORK":return img`
@@ -349,25 +242,6 @@ cb...........ccb.........
 .....8...8.......868.....
 ....8...8.......868......
 .......8........68.......
-`;
-            case "m0u9ldC`%K1QL]O5%5lI":
-            case "DarkBrick":return img`
-6 9 9 9 9 9 9 9 9 9 9 9 9 9 9 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-9 a a a a a a a a a a a a a a 8 
-8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
 `;
             case "b":
             case "DARK":return img`
@@ -530,110 +404,6 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 . b . . . . . . . . . . . . c . 
 b . . . . . . . . . . . . . . c 
 `;
-            case "image7":
-            case "2-1":return img`
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-......................................6.
-.................................2......
-................6..........6........2...
-...2.......2........6............6......
-...........................2............
-.......6........2.....2.......2........9
-...................a...................d
-........2.............................dd
-......a.............................dddd
-......................dddddddd...ddddddd
-............a.......dddddddddddddddddddd
-5...............dddddddddddddddddddddddd
-d...........dddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-`;
-            case "image8":
-            case "2-3":return img`
-......................................................................
-......................................................................
-......................................................................
-......................................................................
-......................................................................
-..................6.........................a.........................
-...........2..........6.........................................a....9
-.6...........................2......2...............2...............dd
-..................................................................dddd
-................a.........a....................................ddddddd
-.............6...............................2.....2.....a...ddddddddd
-...................................ddd.....................ddddddddddd
-5..........................dddddddddddddd.................dddddddddddd
-ddddd...................ddddddddddddddddddd.............dddddddddddddd
-ddddddddddd..222ddddddddddddddddddddddddddddd..........ddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddd.....ddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-`;
-            case "image4":
-            case "2-2":return img`
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..................................................
-..6...............................................
-..................................................
-..................................................
-.............2.........6..2........2..............
-.......6..........................................
-..................................................
-..................................a....a..........
-.............................6....................
-.........................................ddddd...9
-5......................................ddddddddddd
-dddd.................................ddddddddddddd
-ddddd2.............................ddddddddddddddd
-dddddddddddddddddddd22222.......2ddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddd
-`;
-            case "image9":
-            case "2-4":return img`
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddd................dddddddddddd
-dddddddddddd................dddddddddddd
-dddddddddddd................dddddddddddd
-dddddddddddd...2...22...2...dddddddddddd
-dddddddddddd................dddddddddddd
-dddddddddddd................dddddddddddd
-dddddddddddd1..............fdddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddd
-2222222222222222222222222222222222222222
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-.......2...............................2
-.....................2..................
-........................22..........2...
-.................2ddddd.22.dddddd2......
-5...2......2...2ddddddddddddddddddddddd8
-dddddddddddddddddddddddddddddddddddddddd
-`;
             case "image10":
             case "Rusty":return img`
 ................................
@@ -703,6 +473,236 @@ dddddddddddddddddddddddddddddddddddddddd
 ................................
 ................................
 ................................
+`;
+            case "Cr2Y#MOa)wl_PB#X+PIK":
+            case "Tutorial":return img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . 9 
+. . . . . . . . . d 
+. . . . . . . . d d 
+5 . . . . e . d d d 
+d d d d d d d d d d 
+`;
+            case "TdD3YqE/~KsDew0u[Kbl":
+            case "1-1":return img`
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+. . . d 2 . . . . 9 
+. . . . . . . . d d 
+d . . . . . . d d d 
+d d . . . . d d d d 
+d d . . . . . . . 2 
+d d d . . . . . . . 
+d d d d d d d . . . 
+d d d d d d 2 . . . 
+d d d d d d 2 . . . 
+d d d d d d 2 . . . 
+d d d d d d 2 . . . 
+d d d d d d 2 . . . 
+d d d d d d d . . e 
+. . . . . . . . . d 
+. . . . . . . . d d 
+5 . . . . . . d d d 
+d d d d d d d d d d 
+`;
+            case "#2GD(W%:+o@5d":
+            case "1-2":return img`
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddd222222222222dddddddddd
+dddddddd22222222222..........22222222222
+dddddddd2...............................
+dddddddd2...........................6...
+dddddddd2..........2....................
+..............6......6.....6............
+.............................2..........
+.......................................9
+.....ddd.............................ddd
+.....ddd........ddd...2........ddd..dddd
+.....ddd........ddd..........ddddddddddd
+.....ddd........ddd.........dddddddddddd
+.....ddd........ddd.......dddddddddddddd
+.....dddddd22222ddddd....ddddddddddddddd
+5....ddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+`;
+            case "zmk=}[S6g!D6g+M^;g*(":
+            case "1-3":return img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. 5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . 6 . . . . . . 6 . . . . . . . . . . . . . 9 . . 
+. d . . . . . . . d . . . . . . . . . . . . . . . . d d d . 
+. d 2 . . . . . . . . . . . . . . . . . . . . . . d d d d d 
+d d d d d . . . . . 2 . . . . . 2 d d d d d d d d d d d d d 
+d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
+d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
+`;
+            case "t}Rm15B~{b=X0T*Y1exW":
+            case "1-4":return img`
+dddddddddddddddddddd
+d.................fd
+d..2.....22.....2..d
+d..................d
+d..................d
+d1.................d
+dddddddddddddddddddd
+...............62222
+....................
+8...................
+ddddddddddddddd.....
+ddddddddddddd.2.....
+dddddddddd..2.......
+dddddd..............
+ddd2.............ddd
+6............ddddddd
+.........ddddddddddd
+.....ddddddddddddddd
+..ddddddddddddddddd6
+...ddddd2..2...2dd..
+.................d..
+....................
+...........dddd.....
+....ddddddddddddd...
+ddddddddddddd2ddd...
+ddddddd..6.........d
+..................dd
+.................ddd
+5...............dddd
+dddddddddddddddddddd
+`;
+            case "image7":
+            case "2-1":return img`
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+......................................6.
+.................................2......
+................6..........6........2...
+...2.......2........6............6......
+...........................2............
+.......6........2.....2.......2........9
+...................a...................d
+........2.............................dd
+......a.............................dddd
+......................dddddddd...ddddddd
+............a.......dddddddddddddddddddd
+5...............dddddddddddddddddddddddd
+d...........dddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+`;
+            case "m0u9ldC`%K1QL]O5%5lI":
+            case "DarkBrick":return img`
+6 9 9 9 9 9 9 9 9 9 9 9 9 9 9 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+9 a a a a a a a a a a a a a a 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+`;
+            case "image4":
+            case "2-2":return img`
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..6...............................................
+..................................................
+..................................................
+.............2.........6..2........2..............
+.......6..........................................
+..................................................
+..................................a....a..........
+.............................6....................
+.........................................ddddd...9
+5......................................ddddddddddd
+dddd.................................ddddddddddddd
+ddddd2.............................ddddddddddddddd
+dddddddddddddddddddd22222.......2ddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddd
+`;
+            case "image8":
+            case "2-3":return img`
+......................................................................
+......................................................................
+......................................................................
+......................................................................
+......................................................................
+..................6.........................a.........................
+...........2..........6.........................................a....9
+.6...........................2......2...............2...............dd
+..................................................................dddd
+................a.........a....................................ddddddd
+.............6...............................2.....2.....a...ddddddddd
+...................................ddd.....................ddddddddddd
+5..........................dddddddddddddd.................dddddddddddd
+ddddd...................ddddddddddddddddddd.............dddddddddddddd
+ddddddddddd..222ddddddddddddddddddddddddddddd..........ddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddd.....ddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+`;
+            case "image9":
+            case "2-4":return img`
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddd................dddddddddddd
+dddddddddddd................dddddddddddd
+dddddddddddd................dddddddddddd
+dddddddddddd...2...22...2...dddddddddddd
+dddddddddddd................dddddddddddd
+dddddddddddd................dddddddddddd
+dddddddddddd1..............fdddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddd
+2222222222222222222222222222222222222222
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+........................................
+.......2...............................2
+.....................2..................
+........................22..........2...
+.................2ddddd.22.dddddd2......
+5...2......2...2ddddddddddddddddddddddd8
+dddddddddddddddddddddddddddddddddddddddd
 `;
         }
         return null;
