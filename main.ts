@@ -25,6 +25,7 @@ function Levels () {
     }
     CurrentLervel += 1
     Deaths = 0
+    Bossexists = false
     if (CurrentLervel == 1) {
         scene.setTileMap(assets.image`Tutorial`, TileScale.Sixteen)
     } else if (CurrentLervel == 2) {
@@ -126,17 +127,21 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Portal, function (sprite, otherSprite) {
     scene.placeOnRandomTile(mySprite, 1)
-    if (CurrentLervel == 5) {
-        for (let value11 of scene.getTilesByType(15)) {
-            Fork = sprites.create(assets.image`FORK`, SpriteKind.BOSS)
-            scene.place(value11, Fork)
-            Fork.follow(mySprite, 40)
-        }
-    } else if (CurrentLervel == 9) {
-        for (let value12 of scene.getTilesByType(15)) {
-            Whisk = sprites.create(assets.image`Rusty`, SpriteKind.HurtBySpikes)
-            scene.place(value12, Whisk)
-            Whisk.follow(mySprite, 70)
+    if (!(Bossexists)) {
+        if (CurrentLervel == 5) {
+            for (let value11 of scene.getTilesByType(15)) {
+                Fork = sprites.create(assets.image`FORK`, SpriteKind.BOSS)
+                scene.place(value11, Fork)
+                Fork.follow(mySprite, 40)
+                Bossexists = true
+            }
+        } else if (CurrentLervel == 9) {
+            for (let value12 of scene.getTilesByType(15)) {
+                Whisk = sprites.create(assets.image`Rusty`, SpriteKind.HurtBySpikes)
+                scene.place(value12, Whisk)
+                Whisk.follow(mySprite, 70)
+                Bossexists = true
+            }
         }
     }
 })
@@ -428,6 +433,7 @@ let Bportal: Sprite = null
 let MyEnemy: Sprite = null
 let Cleaver: Sprite = null
 let Goal: Sprite = null
+let Bossexists = false
 let Deaths = 0
 let LR = 0
 let vy = 0
