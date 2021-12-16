@@ -360,6 +360,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Spoon, function (sprite, otherSp
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, otherSprite) {
     sprite.destroy(effects.fire, 1000)
+    music.playMelody("A G A B - - - - ", 416)
     for (let value14 of scene.getTilesByType(15)) {
         Whisk2 = sprites.create(assets.image`Rusty2`, SpriteKind.HurtBySpikes2)
         scene.place(value14, Whisk2)
@@ -378,6 +379,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Spoon, function (sprite, oth
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes2, SpriteKind.Spike, function (sprite, otherSprite) {
     sprite.destroy(effects.fire, 1000)
+    music.playMelody("A G A B - - - - ", 416)
     for (let value14 of scene.getTilesByType(15)) {
         Whisk3 = sprites.create(assets.image`Rusty3`, SpriteKind.HurtBySpikes3)
         scene.place(value14, Whisk3)
