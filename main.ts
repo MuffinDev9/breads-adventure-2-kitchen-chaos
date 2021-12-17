@@ -28,26 +28,26 @@ function Levels () {
     Deaths = 0
     Bossexists = false
     if (CurrentLervel == 1) {
-        scene.setTileMap(assets.image`Tutorial`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 2) {
-        scene.setTileMap(assets.image`1-1`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 3) {
-        scene.setTileMap(assets.image`1-2`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 4) {
-        scene.setTileMap(assets.image`1-3`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 5) {
-        scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
         scene.setBackgroundImage(assets.image`DARK`)
-        scene.setTile(13, assets.image`DarkBrick`, true)
+        scene.setTile(13, , true)
         CANDOJAM = true
-        scene.setTileMap(assets.image`2-1`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 7) {
-        scene.setTileMap(assets.image`2-2`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 8) {
-        scene.setTileMap(assets.image`2-3`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else if (CurrentLervel == 9) {
-        scene.setTileMap(assets.image`2-4`, TileScale.Sixteen)
+        scene.setTileMap(, TileScale.Sixteen)
     } else {
         game.over(true)
     }
@@ -380,9 +380,9 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Spoon, function (sprite, oth
 sprites.onOverlap(SpriteKind.HurtBySpikes2, SpriteKind.Spike, function (sprite, otherSprite) {
     sprite.destroy(effects.fire, 1000)
     music.playMelody("A G A B - - - - ", 416)
-    for (let value14 of scene.getTilesByType(15)) {
+    for (let value142 of scene.getTilesByType(15)) {
         Whisk3 = sprites.create(assets.image`Rusty3`, SpriteKind.HurtBySpikes3)
-        scene.place(value14, Whisk3)
+        scene.place(value142, Whisk3)
         Whisk3.follow(mySprite, 110)
     }
 })
@@ -397,9 +397,9 @@ sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Spike, function (sprite, 
     scene.setTileAt(scene.getTile(27, 9), 9)
     Bossexists = false
     music.playMelody("A G A B - - - - ", 416)
-    for (let value13 of scene.getTilesByType(9)) {
+    for (let value132 of scene.getTilesByType(9)) {
         Goal = sprites.create(assets.image`GOOOL`, SpriteKind.End)
-        scene.place(value13, Goal)
+        scene.place(value132, Goal)
     }
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Player, function (sprite, otherSprite) {
