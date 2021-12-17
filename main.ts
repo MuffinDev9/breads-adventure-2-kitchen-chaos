@@ -28,26 +28,26 @@ function Levels () {
     Deaths = 0
     Bossexists = false
     if (CurrentLervel == 1) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`Tutorial`, TileScale.Sixteen)
     } else if (CurrentLervel == 2) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`1-1`, TileScale.Sixteen)
     } else if (CurrentLervel == 3) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`1-2`, TileScale.Sixteen)
     } else if (CurrentLervel == 4) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`1-3`, TileScale.Sixteen)
     } else if (CurrentLervel == 5) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
         scene.setBackgroundImage(assets.image`DARK`)
-        scene.setTile(13, , true)
+        scene.setTile(13, assets.image`DarkBrick`, true)
         CANDOJAM = true
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`2-1`, TileScale.Sixteen)
     } else if (CurrentLervel == 7) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`2-2`, TileScale.Sixteen)
     } else if (CurrentLervel == 8) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`2-3`, TileScale.Sixteen)
     } else if (CurrentLervel == 9) {
-        scene.setTileMap(, TileScale.Sixteen)
+        scene.setTileMap(assets.image`2-4`, TileScale.Sixteen)
     } else {
         game.over(true)
     }
