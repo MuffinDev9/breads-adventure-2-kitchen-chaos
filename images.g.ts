@@ -739,6 +739,63 @@ dddddddddddddddddddddddddddddddddddddddd
 5...2......2...2ddddddddddddddddddddddd8
 dddddddddddddddddddddddddddddddddddddddd
 `;
+            case "O-]Kmsuwk}IV{5EyAh{2":
+            case "BossBrick":return img`
+f f f f f f f f f f f f f f f f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
+f 5 f f f f f f f f f f f f 5 f 
+f 5 f f f f 5 5 5 5 f f f f 5 f 
+f 5 f f f 5 5 5 5 5 5 f f f 5 f 
+f 5 f f f 5 f 5 5 f 5 f f f 5 f 
+f 5 f f f 5 5 5 5 5 5 f f f 5 f 
+f 5 f f f 5 5 5 5 5 5 f f f 5 f 
+f 5 f f f 5 5 5 5 5 f f f f 5 f 
+f 5 f f f f 5 f 5 f f f f f 5 f 
+f 5 f 5 5 f f f f f f 5 5 f 5 f 
+f 5 f f f 5 f 5 5 f 5 f f f 5 f 
+f 5 f f f 5 5 f f 5 5 f f f 5 f 
+f 5 f 5 5 f f f f f f 5 5 f 5 f 
+f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image13":
+            case "3-1":return img`
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+2............d........................................2dd..dddddddddddddddddddd....dddd......dd.....
+2............d....................................dd...dd..dddddddddddddddddddd....dddd......dd.....
+2........d...d.....................d..............dd...dd..dddddddddddddddddddd....dddd.............
+2........d...d..........ddddd......d......ddddd...dd...............................dddd.............
+2........d..............ddddd......d......ddddd...dd.......dddddddddddddddddddd....dddd......dd.....
+2....5...d........222222ddddd...2..d22....ddddd...dd.......dddddddddddddddddddd..............dd....9
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+`;
+            case "image14":
+            case "Block":return img`
+d 1 1 1 1 1 1 1 1 1 1 1 1 1 1 b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+1 d d d d d d d d d d d d d d b 
+b b b b b b b b b b b b b b b b 
+`;
         }
         return null;
     })

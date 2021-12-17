@@ -48,6 +48,11 @@ function Levels () {
         scene.setTileMap(assets.image`2-3`, TileScale.Sixteen)
     } else if (CurrentLervel == 9) {
         scene.setTileMap(assets.image`2-4`, TileScale.Sixteen)
+    } else if (CurrentLervel == 10) {
+        scene.setBackgroundColor(9)
+        scene.setTile(13, assets.image`Block`, true)
+        SpikesMove = 0
+        scene.setTileMap(assets.image`3-1`, TileScale.Sixteen)
     } else {
         game.over(true)
     }
@@ -147,24 +152,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Portal, function (sprite, otherS
     }
 })
 function Tiles () {
-    scene.setTile(13, img`
-        d 1 1 1 1 1 1 1 1 1 1 1 1 1 1 b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        1 d d d d d d d d d d d d d d b 
-        b b b b b b b b b b b b b b b b 
-        `, true)
+    scene.setTile(13, assets.image`Block`, true)
     scene.setTile(5, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -188,18 +176,18 @@ function Tiles () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        . . . e e e e e e e e e e . . . 
-        . . e 7 7 1 7 7 7 7 7 1 7 e . . 
-        . . e 7 1 7 1 7 7 7 1 7 1 e . . 
-        . . e 7 1 1 1 7 7 7 7 7 7 e . . 
-        . . e 7 1 7 1 7 7 7 7 1 7 e . . 
-        . . e 7 7 7 7 7 7 7 7 1 7 e . . 
-        . . . e e e e e e e e e e . . . 
-        . . . . . . . e e . . . . . . . 
-        . . . . . . . e e . . . . . . . 
-        . . . . . . . e e . . . . . . . 
-        . . . . . . . e e . . . . . . . 
-        . . . . . . . e e . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
         `, false)
     scene.setTile(2, img`
         . . . . . . . . . . . . . . . . 
@@ -237,24 +225,7 @@ function Tiles () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, false)
-    scene.setTile(15, img`
-        f f f f f f f f f f f f f f f f 
-        f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
-        f 5 f f f f f f f f f f f f 5 f 
-        f 5 f f f f 5 5 5 5 f f f f 5 f 
-        f 5 f f f 5 5 5 5 5 5 f f f 5 f 
-        f 5 f f f 5 f 5 5 f 5 f f f 5 f 
-        f 5 f f f 5 5 5 5 5 5 f f f 5 f 
-        f 5 f f f 5 5 5 5 5 5 f f f 5 f 
-        f 5 f f f 5 5 5 5 5 f f f f 5 f 
-        f 5 f f f f 5 f 5 f f f f f 5 f 
-        f 5 f 5 5 f f f f f f 5 5 f 5 f 
-        f 5 f f f 5 f 5 5 f 5 f f f 5 f 
-        f 5 f f f 5 5 f f 5 5 f f f 5 f 
-        f 5 f 5 5 f f f f f f 5 5 f 5 f 
-        f 5 5 5 5 5 5 5 5 5 5 5 5 5 5 f 
-        f f f f f f f f f f f f f f f f 
-        `, true)
+    scene.setTile(15, assets.image`BossBrick`, true)
     scene.setTile(1, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -435,8 +406,12 @@ info.onLifeZero(function () {
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Spike, function (sprite, otherSprite) {
-    scene.placeOnRandomTile(mySprite, 5)
-    info.changeLifeBy(-1)
+    if (CurrentLervel != 10) {
+        scene.placeOnRandomTile(mySprite, 5)
+        info.changeLifeBy(-1)
+    } else {
+    	
+    }
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprite.destroy()
@@ -467,6 +442,7 @@ let Bportal: Sprite = null
 let MyEnemy: Sprite = null
 let Cleaver: Sprite = null
 let Goal: Sprite = null
+let SpikesMove = 0
 let Bossexists = false
 let Deaths = 0
 let LR = 0
@@ -505,4 +481,20 @@ game.onUpdate(function () {
 })
 forever(function () {
     controller.moveSprite(mySprite, vx, vy)
+})
+game.onUpdateInterval(500, function () {
+    if (CurrentLervel == 10) {
+        SpikesMove += 1
+        scene.setTileAt(scene.getTile(SpikesMove, 6), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 7), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 8), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 9), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 10), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 11), 13)
+        if (mySprite.x == SpikesMove || mySprite.x < SpikesMove) {
+            info.changeLifeBy(-1)
+            CurrentLervel += -1
+            Levels()
+        }
+    }
 })
