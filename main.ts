@@ -298,6 +298,7 @@ function Tiles () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, false)
+    scene.setTile(3, assets.image`ze-red-fing`, false)
 }
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.vy == 0) {
@@ -491,10 +492,5 @@ game.onUpdateInterval(500, function () {
         scene.setTileAt(scene.getTile(SpikesMove, 9), 13)
         scene.setTileAt(scene.getTile(SpikesMove, 10), 13)
         scene.setTileAt(scene.getTile(SpikesMove, 11), 13)
-        if (mySprite.x == SpikesMove || mySprite.x < SpikesMove) {
-            info.changeLifeBy(-1)
-            CurrentLervel += -1
-            Levels()
-        }
     }
 })
