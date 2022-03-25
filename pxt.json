@@ -5,7 +5,8 @@
         "device": "*",
         "color-coded-tilemap": "*",
         "pxt-status-bar": "github:jwunderl/pxt-status-bar#v0.4.1",
-        "block-menu": "github:riknoll/arcade-custom-menu#v0.0.1"
+        "block-menu": "github:riknoll/arcade-custom-menu#v0.0.1",
+        "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3"
     },
     "files": [
         "main.blocks",
