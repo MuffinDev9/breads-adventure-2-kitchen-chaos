@@ -42,8 +42,8 @@ function Levels () {
         scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
         story.setSoundEnabled(true)
+        story.printDialog("Y O U K I L L E D H I M", 80, 90, 50, 150, 15, 0, story.TextSpeed.VerySlow)
         scene.setBackgroundImage(assets.image`DARK`)
-        story.printText("Y O U K I L L E D H I M", 0, 0, 1, 0, story.TextSpeed.VerySlow)
         scene.setTile(13, assets.image`DarkBrick`, true)
         CANDOJAM = true
         scene.setTileMap(assets.image`2-1`, TileScale.Sixteen)
