@@ -24,6 +24,9 @@ function Levels () {
     for (let value4 of sprites.allOfKind(SpriteKind.Spike)) {
         value4.destroy()
     }
+    for (let value4 of sprites.allOfKind(SpriteKind.Spoon)) {
+        value4.destroy()
+    }
     CurrentLervel += 1
     Deaths = 0
     Bossexists = false
@@ -38,7 +41,9 @@ function Levels () {
     } else if (CurrentLervel == 5) {
         scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
+        story.setSoundEnabled(true)
         scene.setBackgroundImage(assets.image`DARK`)
+        story.printText("Y O U K I L L E D H I M", 0, 0, 1, 0, story.TextSpeed.VerySlow)
         scene.setTile(13, assets.image`DarkBrick`, true)
         CANDOJAM = true
         scene.setTileMap(assets.image`2-1`, TileScale.Sixteen)
