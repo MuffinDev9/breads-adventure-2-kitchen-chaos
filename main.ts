@@ -341,7 +341,7 @@ sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Spike, function (sprite, o
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
-    scene.placeOnRandomTile(mySprite, 5)
+    scene.placeOnRandomTile(mySprite, 1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.End, function (sprite, otherSprite) {
     Levels()
@@ -376,7 +376,7 @@ sprites.onOverlap(SpriteKind.HurtBySpikes3, SpriteKind.Spike, function (sprite, 
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
-    scene.placeOnRandomTile(mySprite, 5)
+    scene.placeOnRandomTile(mySprite, 1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.SECONDSTAGE, function (sprite, otherSprite) {
     if (sprite.y < otherSprite.y) {
@@ -420,7 +420,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 })
 sprites.onOverlap(SpriteKind.HurtBySpikes2, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
-    scene.placeOnRandomTile(mySprite, 5)
+    scene.placeOnRandomTile(mySprite, 1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy(effects.fire, 200)
