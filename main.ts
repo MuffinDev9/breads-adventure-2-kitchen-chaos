@@ -53,16 +53,7 @@ function Levels () {
         scene.setTile(13, assets.image`Block`, true)
         scene.setTileMap(assets.image`3-1`, TileScale.Sixteen)
     } else if (CurrentLervel == 11) {
-        scene.setTileMap(img`
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            . . . . . . . . . . 
-            `, TileScale.Sixteen)
+        scene.setTileMap(assets.image`3-2`, TileScale.Sixteen)
     } else {
         game.over(true)
     }
