@@ -51,6 +51,7 @@ function Levels () {
     } else if (CurrentLervel == 10) {
         scene.setBackgroundImage(assets.image`SkyBG`)
         scene.setTile(13, assets.image`Block`, true)
+        SpikesMove = 0
         scene.setTileMap(assets.image`3-1`, TileScale.Sixteen)
     } else {
         game.over(true)
@@ -442,6 +443,7 @@ let Bportal: Sprite = null
 let MyEnemy: Sprite = null
 let Cleaver: Sprite = null
 let Goal: Sprite = null
+let SpikesMove = 0
 let Bossexists = false
 let Deaths = 0
 let LR = 0
@@ -480,4 +482,15 @@ game.onUpdate(function () {
 })
 forever(function () {
     controller.moveSprite(mySprite, vx, vy)
+})
+game.onUpdateInterval(500, function () {
+    if (CurrentLervel == 10) {
+        SpikesMove += 1
+        scene.setTileAt(scene.getTile(SpikesMove, 6), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 7), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 8), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 9), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 10), 13)
+        scene.setTileAt(scene.getTile(SpikesMove, 11), 13)
+    }
 })
