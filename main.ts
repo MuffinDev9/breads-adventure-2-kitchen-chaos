@@ -41,8 +41,10 @@ function Levels () {
     } else if (CurrentLervel == 5) {
         scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
+        mySprite.setImage(assets.image`nuffink`)
+        scene.setTileMap(assets.image`CutsceneLevel`, TileScale.Sixteen)
         story.setSoundEnabled(true)
-        story.printDialog("Y O U K I L L E D H I M", 80, 90, 50, 150, 15, 0, story.TextSpeed.VerySlow)
+        story.printDialog("Y O U K I L L E D H I M", 80, 90, 50, 150, 1, 0, story.TextSpeed.VerySlow)
         scene.setBackgroundImage(assets.image`DARK`)
         scene.setTile(13, assets.image`DarkBrick`, true)
         CANDOJAM = true
@@ -62,6 +64,7 @@ function Levels () {
     } else {
         game.over(true)
     }
+    mySprite.setImage(assets.image`Aaron`)
     scene.placeOnRandomTile(mySprite, 5)
     for (let value5 of scene.getTilesByType(9)) {
         Goal = sprites.create(assets.image`GOOOL`, SpriteKind.End)
