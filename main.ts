@@ -41,10 +41,7 @@ function Levels () {
     } else if (CurrentLervel == 5) {
         scene.setTileMap(assets.image`1-4`, TileScale.Sixteen)
     } else if (CurrentLervel == 6) {
-        mySprite.setImage(assets.image`nuffink`)
-        scene.setTileMap(assets.image`CutsceneLevel`, TileScale.Sixteen)
-        story.setSoundEnabled(true)
-        story.printDialog("Y O U K I L L E D H I M", 80, 90, 50, 150, 1, 0, story.TextSpeed.VerySlow)
+        TextCutscene("Y O U K I L L E D H I M")
         scene.setBackgroundImage(assets.image`DARK`)
         scene.setTile(13, assets.image`DarkBrick`, true)
         CANDOJAM = true
@@ -94,6 +91,13 @@ function Levels () {
         scene.place(value9, SPOON)
         SPOON.follow(mySprite, 50)
     }
+}
+function TextCutscene (Text: string) {
+    scene.setBackgroundImage(assets.image`BlackBg`)
+    mySprite.setImage(assets.image`nuffink`)
+    scene.setTileMap(assets.image`CutsceneLevel`, TileScale.Sixteen)
+    story.setSoundEnabled(true)
+    story.printDialog(Text, 80, 90, 50, 150, 1, 0, story.TextSpeed.VerySlow)
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (CANDOJAM) {
